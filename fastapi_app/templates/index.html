@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FastAPI Demo</title>
+</head>
+
+<body>
+
+<h1>FastAPI Demo</h1>
+
+<form method="post">
+
+    <input
+        type="text"
+        name="question"
+        placeholder="Írd ide a kérdésed..."
+        size="50">
+
+    <button type="submit">
+        Küldés
+    </button>
+
+</form>
+
+{% if answer %}
+
+<hr>
+
+<h2>Válasz</h2>
+
+<p>{{ answer }}</p>
+
+{% endif %}
+
+</body>
+
+</html>
